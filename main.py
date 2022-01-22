@@ -47,11 +47,9 @@ async def price_update():
         p, trend = await get_sms_price()
         description2 = "$" + p + " " + trend
 
-        await channel.send("SFM/BNB " +
-                           description + "| SFM/BUSD " + description2)
-
-        await channel3.send("SFM/BNB " +
-                            description + " SFM/BUSD " + description2)
+        await channel.send(embed=formatter.embedder("V2 SFS Price (BNB/BUSD)", description + "|"
+                                                    + description2).set_footer(text=str(datetime.now()) +
+                                                                               " (UTC)"))
 
         # ---------------international channel posting
         description = "$" + str(p) + " "
