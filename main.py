@@ -73,7 +73,7 @@ async def price_update():
         countdown -= 1
         await asyncio.sleep(5)
 
-
+# comment this out. this is specifically for alerts on sfm discord and fb feed.
 async def daily_report():
     await bot.wait_until_ready()
 
