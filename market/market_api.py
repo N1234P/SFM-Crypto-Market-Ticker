@@ -149,7 +149,7 @@ async def get_sms_price_alt():
 '''
     trend = ""
     headers = {
-        'X-API-KEY': BITQUERY2
+        'X-API-KEY': BITQUERY
     }
     limit = 3  # too many calls may lead to memory issues and other underlying issues. resort to the most recent
     # gotten price after 1 attempt(s).
@@ -274,7 +274,7 @@ async def get_dex_total_vol(tokens):
         }'''
 
     headers = {
-        'X-API-KEY': BITQUERY2
+        'X-API-KEY': BITQUERY
     }
 
     try:

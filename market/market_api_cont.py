@@ -1,6 +1,7 @@
 import requests
 from market.market_api import get_sms_price
 
+BITQUERY = "BQYACsUPhRNhqH0YVIskV6uOPC28FdmV"
 BITQUERY2 = "BQYCID0t2GKot2dD5inVPc1k9nlIWRZC"
 
 
@@ -85,7 +86,7 @@ async def get_psfm_price():
     }
     '''
     headers = {
-        'X-API-KEY': BITQUERY2
+        'X-API-KEY': BITQUERY
     }
     try:
         psfm_price = requests.post('https://graphql.bitquery.io/',
