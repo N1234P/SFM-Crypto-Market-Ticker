@@ -5,13 +5,13 @@ import random
 
 async def custom_commands(message):
     if "$subscribe" in message.content:
-        subscription.addUser(message.author.id)
-        await message.channel.send("Added User")
+        ret = subscription.addUser(message.author.id)
+        await message.channel.send(ret)
 
 
     elif "$unsubscribe" in message.content:
-        subscription.removeUser(message.author.id)
-        await message.channel.send("Removed User")
+        ret = subscription.removeUser(message.author.id)
+        await message.channel.send(ret)
 
     elif "$viewsubs" in message.content:
 

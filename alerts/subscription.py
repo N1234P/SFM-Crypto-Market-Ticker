@@ -9,27 +9,32 @@ from market.market_api import get_sms_price
 def addUser(id):
     file = open("alerts/subscribers.txt", "r")
     if str(id) in file.read():
-        print("already exists")
         file.close()
-        return
+        return "you already exist on here"
+
     file.close()
 
     file = open("alerts/subscribers.txt", "a")
 
-    file.write(str(id) + "\n")
+    file.write("\n" + str(id) + "\n")
+
     file.close()
+    return "added user"
 
 
 def removeUser(id):
     file = open("alerts/subscribers.txt", "r")
     lines = file.readlines()
     file.close()
-
+    ret = "you weren't found on here"
     with open("alerts/subscribers.txt", "w") as updated_file:
         for line in lines:
             if line.strip("\n") != str(id):
                 updated_file.write(line)
+            else:
+                ret = "REMOVED USER"
     updated_file.close()
+    return ret
 
 
 def change_to_arr():
