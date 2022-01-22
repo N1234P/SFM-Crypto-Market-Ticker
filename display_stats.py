@@ -59,7 +59,7 @@ async def display_all_stats(ctx, ctx2, ctx3):
         text="There are a lot more features, use $help command to find out. \n" + str(datetime.now()) + " UTC")
 
     await ctx.send(embed=em)
-    await ctx2.send(embed=em, delete_after=240)
+    await ctx2.send(embed=em)
 
     # ------------------------------------------ sfm international
     em.remove_field(0)
