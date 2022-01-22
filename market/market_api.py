@@ -9,8 +9,8 @@ import random
 
 transactions_bnb = [0]
 transactions = [0]
-BITQUERY = "BQYACsUPhRNhqH0YVIskV6uOPC28FdmV"
-BITQUERY2 = "BQYCID0t2GKot2dD5inVPc1k9nlIWRZC"
+BITQUERY = "signupforbitquery"
+BITQUERY2 = "if BITQUERY runs out"
 
 
 async def get_pcs_price():
