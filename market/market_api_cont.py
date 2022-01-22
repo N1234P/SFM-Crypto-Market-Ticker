@@ -1,8 +1,8 @@
 import requests
 from market.market_api import get_sms_price
 
-BITQUERY = "BQYACsUPhRNhqH0YVIskV6uOPC28FdmV"
-BITQUERY2 = "BQYCID0t2GKot2dD5inVPc1k9nlIWRZC"
+BITQUERY = "your_own"
+BITQUERY2 = "your_own"
 
 
 async def get_psfm_price():
