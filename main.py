@@ -15,7 +15,7 @@ from market.market_api import get_sms_price
 from market.market_api import get_bnb_sms_price
 from alerts.subscription import alert
 
-TOKEN_AUTH = "xyz"
+TOKEN_AUTH = "OTM0NTQyODQ5NjcwNzgzMDQ5.Yexm2g.2s1UvtOljYQj65p3zle5Sc_5z9c"
 
 whales = []
 
