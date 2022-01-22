@@ -35,6 +35,8 @@ async def price_update():
     countdown = 0
     await bot.wait_until_ready()
 
+    # these channels are specific channels on the safemooon discord. modify them as your own to post on other
+    # channels, or completely comment out this function for commands only.
     channel = bot.get_channel(870391088723157072)
     channel2 = bot.get_channel(839116448675922011)
     channel3 = bot.get_channel(875196762682437682)

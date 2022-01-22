@@ -27,7 +27,7 @@ async def cmds(message):
             await display_nonembedded_stats(channel)
             return
 
-    channels = ["📈│price-watch"]
+    channels = ["📈│price-watch"]  # add your own channel here to enable commands at any given channel
     arr = ["$papa", "$percent", "$psupply", "$psfm", "$ppos", "$pos", "$pwallpos"]
     if str(message.channel) in channels:
         if "$wallet" in message.content:
